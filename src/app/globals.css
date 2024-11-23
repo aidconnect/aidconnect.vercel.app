@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background: rgb(108 172 228 / 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.navbar{
+  z-index: 1;
+  position: fixed;
+  background: white;
+  width: inherit;
+  height: 20%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  max-width: inherit;
+}
+
+.rectangle{
+  display: none;
+}
+
+.home{
+  position: fixed;
+  width: 10%;
+  height: 20%;
+  border: 0;
+  border-bottom-left-radius: 40px;
+  background: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+}
+
+.home:hover{
+  box-shadow: 0 3px 10px rgba(50, 50, 50, 0.75);
+  background: #6cace4;
+  color: white;
+}
+
+.about{
+  position: fixed;
+  margin-left: 10%;
+  width: 10%;
+  height: 20%;
+  border: 0;
+  background: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+}
+
+.about:hover{
+  box-shadow: 0 3px 10px rgba(50, 50, 50, 0.75);
+  background: #6cace4;
+  color: white;
+}
+
+.campaigns{
+  position: fixed;
+  margin-left: 20%;
+  width: 10%;
+  height: 20%;
+  border: 0;
+  background: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+}
+
+.campaigns:hover{
+  box-shadow: 0 3px 10px rgba(50, 50, 50, 0.75);
+  background: #6cace4;
+  color: white;
+}
+
+.title{
+  position: fixed;
+  width: 35vw;
+  height: 35vh;
+  margin-top: -7vh;
+  margin-left: 32%;
+}
+
+.volunteer{
+  position: fixed;
+  margin-left: 70%;
+  width: 10%;
+  height: 20%;
+  border: 0;
+  background: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+}
+
+.volunteer:hover{
+  box-shadow: 0 3px 10px rgba(50, 50, 50, 0.75);
+  background: #6cace4;
+  color: white;
+}
+
+.contact{
+  position: fixed;
+  margin-left: 80%;
+  width: 10%;
+  height: 20%;
+  border: 0;
+  background: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+}
+
+.contact:hover{
+  box-shadow: 0 3px 10px rgba(50, 50, 50, 0.75);
+  background: #6cace4;
+  color: white;
+}
+
+.login{
+  position: fixed;
+  margin-left: 90%;
+  width: 10%;
+  height: 20%;
+  border: 0;
+  border-bottom-right-radius: 40px;
+  background: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+}
+
+.login:hover{
+  box-shadow: 0 3px 10px rgba(50, 50, 50, 0.75);
+  background: #6cace4;
+  color: white;
+}
+
+.image{
+  position: absolute;
+  width: 98%;
+  height: 80%;
+  left: 1%;
+  background: rgb(108 172 228 / 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tagline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 45vh;
+  margin-left: 5%;
+  font-size: 3.5vw;
+  font-family: 'Brush Script MT', cursive;
+  filter: opacity(75%);
+}
+
+.smile{
+  width: 65vw;
+  height: 60vh;
+  margin-top: 20vh;
+  margin-left: 30%;
+  filter: opacity(20%);
+}
+
+.scroll{
+  position: absolute;
+  height: 10%;
+  width: 2.5%;
+  border-radius: 20px;
+  border: 0;
+  background: white;
+  left: 50%;
+  bottom: 7%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+}
+
+.scroll::before,.scroll::after{
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%,-100%) rotate(45deg);
+  animation: scroll 1s ease-in-out infinite;
+}
+
+.scroll::after{
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll{
+  0%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+.dot{
+  position: absolute;
+  bottom: 3%;
+  left: 50.75%;
+  width: 1%;
+  height: 2%;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background: white;
+  cursor: pointer;
+}
+
+.bar{
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #6cace4;
+  width: 100%;
+  height: 30%;
+  filter: opacity(50%);
+}
+
+.what{
+  position: absolute;
+  top: 110%;
+  left: 15%;
+  width: 20%;
+  max-height: 25rem;
+  height: 50%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  perspective: 1000px;
+}
+
+.what:hover>.card{
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.why{
+  position: absolute;
+  top: 110%;
+  left: 40.5%;
+  width: 20%;
+  height: 50%;
+  max-height: 25rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  perspective: 1000px;
+}
+
+.why:hover>.card{
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.how{
+  position: absolute;
+  top: 110%;
+  left: 65.5%;
+  width: 20%;
+  height: 50%;
+  max-height: 25rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  perspective: 1000px;
+}
+
+.how:hover>.card{
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card{
+  position: relative;
+  margin-top: -5%;
+  width: 100%;
+  height: 100%;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  backface-visibility: hidden;
+}
+
+.is{
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  padding-left: 5%;
+  font-size: 8vh;
+}
+
+.giv3r{
+  color: #2774bc;
+}
+
+.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2774bc;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.desc{
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 25%;
+}
+
+.line{
+  position: absolute;
+  width: 80%;
+  height: 0.5%;
+  background: black;
+  top: 170%;
+  left: 10%;
+  filter: opacity(25%);
+}
+
+.flip{
+  position: absolute;
+  font-size: 30px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-align: center;
+  top: 170%;
+  left: 43%;
+}
+
+.statistics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 190%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3rem;
+  filter: opacity(75%);
+}
+
+.stats{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 210%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.above{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 60%;
+}
+
+.below{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 40%;
+}
+
+.space{
+  width: 100%;
+  height: 5%;
+}
+
+.users{
+  width: 100%;
+  height: 20%;
+}
+
+.ngo,.donor,.needy,.service{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  float: left;
+  font-size: 1.25rem;
+}
+
+.ngo h1,.donor h1,.needy h1,.service h1,.campaign h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  background: white;
+  border-radius: 20px;
+}
+
+.user{
+  font-weight: lighter;
+}
+
+.campaign,.donations{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.donations h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+  background: white;
+  border-radius: 20px;
+}
+
+.numbers{
+  width: 100%;
+  height: 20%;
+}
+
+.total,.completion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.total h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+  background: white;
+  border-radius: 20px;
+  margin-left: 5%;
+}
+
+.completion h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 5%;
+}
+
+.ngo h1:hover,.donor h1:hover,.needy h1:hover,.service h1:hover,.campaign h1:hover,.donations h1:hover,.total h1:hover,.completion h1:hover{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+}
+
+.feedback{
+  position: absolute;
+  top: 270%;
+  width: 100%;
+  height: 60%;
+  background: rgb(255 255 255 / 0.5);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.up{
+  width: 100%;
+  height: 30%;
+}
+
+.send{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+
+.value{
+  font-size: 3.5vw;
+  font-family: 'Brush Script MT', cursive;
+  filter: opacity(75%);
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.button input{
+  width: 25%;
+  height: 40%;
+  background: #2774bc;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: larger;
+}
+
+.button input:hover{
+  cursor: pointer;
+  background: #6cace4;
+}
+
+.down{
+  width: 100%;
+  height: 70%;
+}
+
+.one,.two,.three{
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.four{
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: x-large;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.input input{
+  width: 90%;
+  height: 50%;
+  background: rgb(108 172 228 / 0.25);
+  border: 0;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.input textarea{
+  width: 90%;
+  height: 50%;
+  background: rgb(108 172 228 / 0.25);
+  border: 0;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  resize: none;
+}
+
+.enter{
+  width: 90%;
+  height: 90%;
+}
+
+footer{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  top: 330%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+@media screen and (orientation:portrait){
+  .navbar{
+    height: 15vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .home{
+    width: 16.6%;
+    height: 7vh;
+    font-size: 2vw;
+    margin-top: 8vh;
+    border-bottom-left-radius: 20px;
+  }
+
+  .about{
+    width: 16.6%;
+    height: 7vh;
+    font-size: 2vw;
+    margin-top: 8vh;
+    margin-left: 16.6%;
+  }
+
+  .campaigns{
+    width: 16.6%;
+    height: 7vh;
+    font-size: 2vw;
+    margin-top: 8vh;
+    margin-left: 33.2%;
+  }
+
+  .title{
+    z-index: -1;
+    width: 50%;
+    height: 12.5vh;
+    margin-top: -1.5vh;
+    margin-left: 25%;
+  }
+
+  .volunteer{
+    width: 17%;
+    height: 7vh;
+    font-size: 2vw;
+    margin-left: 49.7%;
+    margin-top: 8vh;
+  }
+
+  .contact{
+    width: 16.6%;
+    height: 7vh;
+    font-size: 2vw;
+    margin-left: 66.7%;
+    margin-top: 8vh;
+  }
+
+  .login{
+    width: 16.6%;
+    height: 7vh;
+    font-size: 2vw;
+    margin-left: 83.4%;
+    margin-top: 8vh;
+    border-bottom-right-radius: 20px;
+  }
+
+  .image{
+    justify-content: center;
+    align-items: center;
+    top: 8vh;
+    left: 2.5vw;
+    width: 95%;
+    height: 39vh;
+    border-radius: 10px;
+  }
+  .smile{
+    position: absolute;
+    left: -72%;
+    margin-top: 6.7vh;
+    width: 140%;
+    height: 32.25vh;
+  }
+
+  .rectangle{
+    position: absolute;
+    display: block;
+    background: #6cace4;
+    filter: opacity(25%);
+    width: 100%;
+    height: 7vh;
+    top: 48.5vh;
+  }
+
+  .tagline{
+    font-size: 5vw;
+    margin-top: 49vh;
+    margin-left: 0;
+  }
+
+  .scroll{
+    position: absolute;
+    width: 8vw;
+    height: 7vh;
+    margin-left: 46%;
+    top: 62vh;
+    bottom: 0;
+    left: 0;
+  }
+
+  .dot{
+    position: absolute;
+    width: 3.5vw;
+    height: 1.5vh;
+    top: 71vh;
+    margin-left: 48.5%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .flip{
+    font-size: 5vw;
+    top: 0;
+    left: 0;
+    margin-top: 80vh;
+    margin-left: 32%;
+  }
+
+  .line{
+    height: 0.5vh;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    margin-top: 85vh;
+    margin-left: 10%;
+    filter: opacity(10%);
+  }
+
+  .bar{
+    height: 35vh;
+    top: 0;
+    margin-top: 95vh;
+    filter: opacity(25%);
+  }
+
+  .what{
+    width: 35%;
+    height: 22vh;
+    margin-top: 90vh;
+    margin-left: 10%;
+    top: 0;
+    left: 0;
+  }
+
+  .why{
+    width: 35%;
+    height: 22vh;
+    margin-top: 90vh;
+    margin-left: 55%;
+    top: 0;
+    left: 0;
+  }
+
+  .how{
+    width: 35%;
+    height: 22vh;
+    margin-top: 116vh;
+    margin-left: 32.5%;
+    top: 0;
+    left: 0;
+  }
+
+  .front,.back{
+    border-radius: 10px;
+  }
+
+  .is{
+    font-size: 3.5vh;
+    margin-top: 4vh;
+    margin-left: 2vw;
+  }
+
+  .desc{
+    font-size: 1.25vh;
+    margin-left: 3.5vw;
+    margin-top: 3.5vh;
+    padding: 0;
+  }
+}

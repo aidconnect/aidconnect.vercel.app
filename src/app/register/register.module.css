@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+.canvas{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    background: rgb(108 172 228 / 0.25);
+    font-size: 2.5rem;
+    font-weight: lighter;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;
+}
+
+.content{
+    width: 100%;
+    height: 80%;
+}
+
+.left{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+.mid{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+.right{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+.high{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.circle{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.logo{
+    width: 15rem;
+    height: 7.5rem;
+}
+
+.low{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.log{
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.in{
+    color: #2774bc;
+}
+
+.ngo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+}
+
+.services{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+}
+
+.donor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+}
+
+.needy{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+}
+
+.card{
+    width: 90%;
+    height: 80%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: 0;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.image{
+    width: 80%;
+    height: 90%;
+}
+
+.text{
+    font-size: 1rem;
+}
+
+@media screen and (orientation:portrait){
+    .header{
+        height: 15%;
+    }
+    
+    .heading{
+        height: 50%;
+        font-size: 5vw;
+    }
+
+    .content{
+        height: 90%;
+    }
+
+    .left{
+        float: none;
+        width: 100%;
+        height: 20%;
+    }
+
+    .mid{
+        float: none;
+        width: 100%;
+        height: 40%;
+    }
+
+    .right{
+        float: none;
+        width: 100%;
+        height: 40%;
+    }
+
+    .high{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .low{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .circle{
+        width: 7.5rem;
+        height: 7.5rem;
+        margin-top: 0;
+    }
+
+    .logo{
+        width: 10rem;
+        height: 5rem;
+    }
+
+    .log{
+        margin-top: 25%;
+        font-size: 0.75rem;
+    }
+
+    .ngo{
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .services{
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .donor{
+        justify-content: center;
+        align-items: flex-start;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .needy{
+        justify-content: center;
+        align-items: flex-start;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .card{
+        width: 80%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .top{
+        width: 100%;
+        height: 50%;
+    }
+
+    .bottom{
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+    }
+
+    .text{
+        font-size: 0.75rem;
+    }
+}

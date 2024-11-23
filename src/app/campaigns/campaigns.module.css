@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+.canvas{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.above{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 60%;
+}
+
+.below{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 40%;
+}
+
+.top{
+    width: 100%;
+    height: 30%;
+}
+
+.one{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 43%;
+    height: 100%;
+    float: left;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background: white;
+}
+
+.logo{
+    width: 15rem;
+    height: 7.5rem;
+}
+
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2%;
+    height: 100%;
+    float: left;
+}
+
+.three{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+    float: left;
+}
+
+.three h1{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.campaigns{
+    width: 95%;
+    height: 95%;
+    overflow-y: auto;
+}
+
+.card{
+    width: 23%;
+    height: 80%;
+    background: white;
+    border-radius: 15px;
+    float: left;
+}
+
+.card:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background: #2774bc;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.head h1{
+    color: white;
+    font-size: medium;
+}
+
+.cause{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.to{
+    width: 100%;
+    height: 30%;
+}
+
+.to p{
+    font-size: smaller;
+}
+
+.to h6{
+    font-size: x-small;
+}
+
+.left{
+    width: 5%;
+    height: 100%;
+    float: left;
+}
+
+.right{
+    width: 95%;
+    height: 100%;
+    float: left;
+}
+
+.by{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+    background: #2774bc;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+}
+
+.link:hover{
+    cursor: pointer;
+    background: #6cace4;
+}
+
+.space{
+    width: 2%;
+    height: 85%;
+    float: left;
+}

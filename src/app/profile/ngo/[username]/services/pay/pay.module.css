@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+.canvas{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.top{
+    width: 100%;
+    height: 30%;
+}
+
+.one{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 43%;
+    height: 100%;
+    float: left;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background: white;
+}
+
+.logo{
+    width: 15rem;
+    height: 7.5rem;
+}
+
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2%;
+    height: 100%;
+    float: left;
+}
+
+.three{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+    float: left;
+}
+
+.three h1{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.typenid{
+    width: 100%;
+    height: 20%;
+}
+
+.nothing{
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.type{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.id{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.name{
+    width: 100%;
+    height: 20%;
+}
+
+.email{
+    width: 100%;
+    height: 20%;
+}
+
+.phone{
+    width: 100%;
+    height: 20%;
+}
+
+.address{
+    width: 100%;
+    height: 20%;
+}
+
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.label label{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.input input{
+    width: 80%;
+    height: 40%;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    font-size: medium;
+    text-align: center;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.from{
+    width: 100%;
+    height: 20%;
+}
+
+.to{
+    width: 100%;
+    height: 20%;
+}
+
+.amount{
+    width: 100%;
+    height: 20%;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.submit input{
+    width: 15%;
+    height: 20%;
+    background: #2774bc;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.submit input:hover{
+    cursor: pointer;
+    background: #6cace4;
+}
